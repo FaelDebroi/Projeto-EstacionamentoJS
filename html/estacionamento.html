@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento</title>
+    <link rel="stylesheet" href="../css/estacionamento.css">
+</head>
+
+<body>
+    <h1>Estacionamento</h1>
+    <div>
+        <input type="text" id="placa" placeholder="Digite a placa do carro" />
+        <button id="entrar">Entrar no Estacionamento</button>
+    </div>
+        <br>
+    <div>
+        <label for="convenio">Tem Convênio?</label>
+        <input type="checkbox" id="convenio" /> 
+
+        <select id="loja-convenio">
+            <option value="">Selecione a loja conveniada</option>
+        </select>
+
+    </div>
+        <br>
+    <div>
+        <label for="tarifa">Valor Atual da tarifa:</label>
+        <span id="valor-tarifa">Carregando...</span> <!-- Exibe o valor da tarifa aqui -->
+    </div>
+   <br>
+    <h2>Tickets Ativos:</h2>
+    <div id="ckets-list"></div>
+
+   
+
+    <!-- Firebase -->
+    <!-- Atualize para a versão mais recente do Firebase -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script type="module" src="../js/estacionamento.js"></script>
+</body>
+
+</html>
