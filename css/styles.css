@@ -96,18 +96,4 @@ button:hover {
     color: #999;
 }
 
-/* Responsividade para dispositivos móveis */
-@media (max-width: 600px) {
-    .login-container {
-        width: 90%;
-        padding: 20px;
-    }
 
-    h2 {
-        font-size: 20px;
-    }
-
-    input, button {
-        font-size: 14px;
-    }
-}
