@@ -33,7 +33,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
                 window.location.href = "/html/tarifa.html"; // Substitua com a URL da página de ADMIN
             } else {
                 // Redireciona para a página do funcionário
-                window.location.href = "/html/estacionamento.html"; // Substitua com a URL da página de funcionário
+                window.location.href = "/Projeto-EstacionamentoJS/html/estacionamento.html"; // Substitua com a URL da página de funcionário
             }
         })
         .catch((error) => {
