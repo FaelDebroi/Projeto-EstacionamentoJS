@@ -30,10 +30,10 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
             const user = userCredential.user;
             if (user.email === "admin@example.com") {
                 // Redireciona para a página de ADMIN
-                window.location.href = "/Projeto-EstacionamentoJS/html/tarifa.html"; // Substitua com a URL da página de ADMIN
+                window.location.href = "./Projeto-EstacionamentoJS/html/tarifa.html"; // Substitua com a URL da página de ADMIN
             } else {
                 // Redireciona para a página do funcionário
-                window.location.href = "/Projeto-EstacionamentoJS/html/estacionamento.html"; // Substitua com a URL da página de funcionário
+                window.location.href = "./Projeto-EstacionamentoJS/html/estacionamento.html"; // Substitua com a URL da página de funcionário
             }
         })
         .catch((error) => {
