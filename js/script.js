@@ -1,7 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
 import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
 
-// Configuração do Firebase
 const firebaseConfig = {
     apiKey: "AIzaSyBRKEC5zRICQvcmlnTcC06qSbiiyDexOOE",
     authDomain: "estacionamento-2143e.firebaseapp.com",
@@ -17,7 +16,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
-// Função para fazer o login
+
 document.getElementById('loginForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -29,11 +28,11 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
         .then((userCredential) => {
             const user = userCredential.user;
             if (user.email === "admin@example.com") {
-                // Redireciona para a página de ADMIN
-                window.location.href = "./html/tarifa.html"; // Substitua com a URL da página de ADMIN
+                //admin
+                window.location.href = "./html/tarifa.html"; 
             } else {
-                // Redireciona para a página do funcionário
-                window.location.href = "./html/estacionamento.html"; // Substitua com a URL da página de funcionário
+                // cliente
+                window.location.href = "./html/estacionamento.html"; 
             }
         })
         .catch((error) => {
